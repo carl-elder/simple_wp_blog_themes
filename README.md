@@ -1,2 +1,2 @@
 # simple_wp_blog_themes
-A simple WordPress blog theme and its children, built several years ago...
+A simple WordPress blog theme and its children, built several years ago in one afternoon. Super simple, just guidance for whomever may need it. I make no guarantees about anything here, these were built to get low priority blogs back online when a PHP upgrade caused some very old sites that hadn't been updated in years to crash. Will not be keeping up with these or updating further.
