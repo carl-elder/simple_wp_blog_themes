@@ -1,0 +1,316 @@
+/*
+Theme Name: aero
+Theme URI: http:/sportys.com/
+Author: Carl Elder
+Author URI: http://sportys.com/
+Description: Simple lightweight blogging Theme with native slider options and only the necessary bells and whistles.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: aero
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+aero is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff; /* Fallback for when there is no custom background color defined. */
+}
+img {
+	max-width:100%;
+	height:auto;
+}
+a {
+	color: #a60000;
+}
+p {
+	margin-bottom:24px;
+	line-height:1.75;
+}
+blockquote {
+    margin: 1rem 0;
+    padding: 10px 20px;
+    background: lightgrey;
+    font-style: oblique;
+	font-size:18px;
+}
+blockquote p {
+	margin-bottom:0;
+}
+.comment-list, .comment-list .children {
+	list-style:none;
+}
+.comment-body {
+	padding-bottom:20px;
+}
+.comment-form-comment label {
+    display: block;
+    margin-bottom: 0;
+}
+.widget ul li {
+	margin:20px 0;
+}
+time.updated::before {
+    content: ' - ';
+}
+#masthead,
+#content {
+	background-color:#ffffff;
+}
+#content {
+	padding-top:0;
+	padding-bottom:30px;
+}
+#content #primary {
+	padding: 30px 0;
+}
+.content-footer .col-md-4 {
+	padding-top:30px;
+	border-top: solid 1px #ddd;
+}
+.content-footer p {
+	font-size: 12px;
+}
+#colophon {
+	background-color:#e7e2d9;
+}
+#masthead .row,
+#content .row {
+	padding:0 20px;
+}
+#masthead .site-branding.row {
+	padding:20px;
+}
+.custom-logo {
+	max-width:100%;
+}
+h2 {
+	font-size:24px;
+}
+#secondary h2 {
+	font-size:18px;
+	font-weight:bold;
+}
+h3.entry-title, h3.entry-title a {
+	font-size:16px;
+	color:#a60000;
+	text-align: left;
+}
+#main > .row {
+	margin:20px 0;
+}
+#secondary > section {
+	margin:0 0 50px 0;
+}
+#main > header, .icon-border {
+	display:flex;
+	width:100%;
+	margin:20px 0;
+}
+#secondary {
+	text-align:left;
+}
+.centered_header, .centered_icon {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 25px;
+	flex:0 0 auto;
+	flex-shrink:0;
+}
+.icon-border {
+	border:none;
+}
+.off-center {
+	border-bottom:solid 1px grey;
+	flex:1;
+	height:16px;
+}
+.icon-border .off-center{
+	height:8px;
+	border-color:lightgrey;
+}
+.icon-border .centered_icon {
+	color:grey;
+}
+.carousel-caption {
+	right:auto;
+	left:75px;
+	background:rgba(0,0,0,0.6);
+	padding-top:8px;
+	padding-bottom:8px;
+	padding-left:12px;
+	padding-right:12px;
+	transition:0.3s;
+}
+#search-submit {
+	border: none;
+	color: #fff;
+	background-color: #a60000;
+	margin-left: -5px;
+	height: 30px;
+}
+#search-input {
+	border: solid 1px #a60000;
+	padding: 2px;
+}
+.carousel-caption:hover{
+	background:rgba(0,0,0,0.9);
+	transition:0.3s;
+}
+.carousel-caption a {
+	color:#ffffff;
+	font-weight:700;
+}
+.carousel-caption a:hover {
+	text-decoration:none;
+}
+.widget ul {
+	padding-left: 0;
+	list-style: none;
+}
+.widget ul li {
+
+}
+.soc_cir {
+	width:30px;
+	height:30px;
+	border-radius:100%;
+	color:#ffffff;
+	background-color:#a60000;
+	display:inline-block;
+	text-align:center;
+	padding-top:1px;
+	border:solid 2px #a60000;
+	transition:0.3s;
+	line-height:1.5;
+	margin:0 5px 10px 5px;
+}
+
+.soc_cir:hover {
+	color:#a60000;
+	background-color:#fff;
+	transition:0.3s;
+}
+.alignleft {
+	margin-right:20px;
+	float: left;
+}
+.alignright {
+	margin-left:20px;
+	float: right;
+}
+.wp-caption-text {
+	font-size:12px;
+	font-style:italic;
+}
+#colophon {
+	padding:30px;
+}
+#colophon .col-md-12 {
+	text-align:center;
+	font-size:12px;
+}
+#colophon .row:first-of-type .col-md-12 {
+	padding-bottom:15px;
+}
+#colophon .row:last-of-type .col-md-12 {
+	padding-top:15px;
+}
+figure {
+	display: table;
+}
+figcaption {
+	display: table-caption;
+	caption-side:bottom;
+}
+@media (min-width: 576px) {
+	.navbar {
+		padding-bottom:25px;
+	}
+	#masthead {
+		padding-bottom:10px;
+	}
+	header > .navbar {
+		border-bottom: solid 1px #ddd;
+	}
+	header > .navbar .navbar-nav {
+		    margin: 0 auto;
+		    display: flex;
+		    width: 100%;
+	}
+	li.menu-item {
+	    flex: 1 0 auto;
+	}
+	#menu-header li .dropdown-toggle::after {
+		display:none;
+	}
+	.navbar-expand-sm .navbar-nav .nav-link {
+		padding-right: 10px;
+		padding-left: 10px;
+		color: black;
+	}
+	.dropdown:hover .dropdown-menu {
+		display: block;
+		margin-top: 0; // remove the gap so it doesn't close
+	}
+	.navbar-expand-sm .navbar-nav .dropdown-menu {
+		background-color: rgba(0, 0, 0, 0.95);
+	}
+	.dropdown-item {
+		color:#fff;
+	}
+}
+@media (min-width:768px) {
+
+	.container {
+		width:100%;
+	}
+
+}
+
+@media (min-width:992px){
+
+	.container{
+		width:990px;
+	}
+
+}
+@media (max-width:576px){
+	.navbar {
+		padding:10px 0;
+	}
+	.carousel-caption {
+		top:100%;
+		display:block;
+		position:static;
+	}
+	#secondary {
+		padding-left:0;
+	}
+	h3.entry-title {
+		margin-top:20px;
+	}
+}

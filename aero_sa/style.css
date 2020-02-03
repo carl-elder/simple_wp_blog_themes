@@ -1,0 +1,27 @@
+/*
+ Theme Name:   Aero - Sporty's Academy
+ Theme URI:    http://sportys.com/aero-sa/
+ Description:  Aero Child Theme - Sporty's Academy
+ Author:       Carl Elder
+ Author URI:   http://sportys.com
+ Template:     aero
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  aero-child
+*/
+
+
+.carousel-item img {
+    width: 100%;
+}
+.custom-logo-link {
+	display:block;
+	margin:0 auto;
+}
+.dropdown-item {
+	color:#fff;
+}
+.carousel-caption {
+	background:rgba(0,0,0,0.8);
+}

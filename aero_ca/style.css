@@ -1,0 +1,37 @@
+/*
+ Theme Name:   Aero Child - Cincinnati Avionics
+ Theme URI:    http://sportys.com/aero-child-ca/
+ Description:  Aero Child Theme for Cincinnati Avionics
+ Author:       Carl Elder
+ Author URI:   http://sportys.com
+ Template:     aero
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  aero-child-ca
+*/
+
+#masthead {
+	background-color:currentcolor;
+}
+header > .navbar {
+    	border-bottom: none;
+}
+.navbar-light .navbar-nav .nav-link {
+	color:#fff;
+	text-align:center;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	color:#fff;
+}
+.site-branding {
+	margin-right:20px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color:lightblue;
+}
+h3.entry-title, h3.entry-title a, a {
+	color:midnightblue;
+	font-weight:bold;
+}
